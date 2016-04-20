@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body
+{
+	background: #eeeeee;
+	line-height: 1.25em;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+	
+	display: flex;
+}
+
+#main
+{
+	margin: auto 1em;
+	padding: 1em;
+	background: #fafafa;
+	flex-grow: 1;
+}
+
+ul#listCategories
+{
+	padding: 0;
+	margin: auto 0.5em;
+}
+
+ul#listCategories ul
+{
+	padding: 0;
+	display: none;
+	margin: 0.5em auto;
+}
+
+ul#listCategories li
+{
+	list-style: none;
+	text-align: center;
+	padding: 0.25em;
+	margin: 0.1em;
+	
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+ul#listCategories li a
+{
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+#categories
+{
+	width: 200px;
+}
