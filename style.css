@@ -50,5 +50,5 @@ ul#listCategories li a
 
 #categories
 {
-	width: 200px;
+	min-width: 200px;
 }
