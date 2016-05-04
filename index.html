@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Sample JS_Site</title>
+<title>Pager Test</title>
 
 <link rel="stylesheet" href="./style.css">
 
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<script src="cookieutils.js"></script>
-<script src="queryutils.js"></script>
+<script src="vendor/queryutils.js"></script>
+<script src="vendor/jpager.js"></script>
 <script>
-	cookies = getCookies();
 	queries = getQueries();
+	
+	id = ('id' in queries) ? queries['id'] : 'index';
 </script>
-
-<script src="pagegetter.js"></script>
-<script src="main.js"></script>
-<script>
-	var currentPageId = 'id' in queries ? queries['id'] : 'index';
-</script>
-
 
 <section id="categories"></section>
 <section id="main"></section>
 
+<script>
 
-<script>init(currentPageId);</script>
+	pullPage('data/' + id, function(data)
+	{
+		var main = document.getElementById('main');
+		
+		if ('title' in data['metas']) document.title = data['metas']['title'] + ' | ' + document.title;
+		
+		main.innerHTML = data['body'].innerHTML;
+	});
+	
+	pullPage('data/categories', function(data)
+	{
+		var categories = document.getElementById('categories');
+		
+		categories.innerHTML = data['body'].innerHTML;
+	});
+	
+</script>
