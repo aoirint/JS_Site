@@ -1,6 +1,8 @@
 # JS_Site
 Simple Website Using JavaScript (Ajax?)
 
+http://kanomiya.github.io/JS_Site
+
 ## Article HTML File
 
 ### Meta
