@@ -2,7 +2,7 @@
 function pullFile(path, callback)
 {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', path, false);
+	xhr.open('GET', path);
 	
 	xhr.onreadystatechange = function()
 	{
