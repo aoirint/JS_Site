@@ -58,6 +58,8 @@ function loadFileData(elm)
 		
 		if (path == '') continue;
 		
+		path = 'data/' + path;
+		
 		pullFile(path, function(res)
 		{
 			tag.innerHTML = res;
