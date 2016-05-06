@@ -7,6 +7,7 @@ http://kanomiya.github.io/JS_Site
 
 ### Meta
 |name|content|
+|:--|:--|
 |title|The title of the article|
 
 ## Language Parser
