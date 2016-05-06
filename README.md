@@ -17,6 +17,6 @@ http://kanomiya.github.io/JS_Site
 ## File Loader
 e.g. prints a textfile...
 
-Please append an attribute 'data-load', and set content into a path of your textfile.
+Please append an attribute 'data-load', and set the tag content into a path of your textfile.
 
-<TAG data-load>PATH</TAG>
+&gt;TAG data-load&lt;PATH&gt;/TAG&lt;
