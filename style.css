@@ -52,3 +52,9 @@ ul#listCategories li a
 {
 	min-width: 200px;
 }
+
+.pre
+{
+	white-space: pre;
+	
+}

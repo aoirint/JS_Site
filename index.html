@@ -6,6 +6,7 @@
 
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="vendor/queryutils.js"></script>
+<script src="vendor/marked.js"></script>
 <script src="vendor/jpager.js"></script>
 <script>
 	queries = getQueries();
@@ -23,15 +24,19 @@
 		var main = document.getElementById('main');
 		
 		if ('title' in data['metas']) document.title = data['metas']['title'] + ' | ' + document.title;
-		
+
 		main.innerHTML = data['body'].innerHTML;
+		
+		return main;
 	});
 	
-	pullPage('data/categories', function(data)
+	pullPage('data/categories', function(data, callback)
 	{
 		var categories = document.getElementById('categories');
 		
 		categories.innerHTML = data['body'].innerHTML;
+
+		return categories;
 	});
 	
 </script>

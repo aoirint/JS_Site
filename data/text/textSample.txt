@@ -1,0 +1,9 @@
+
+### iTextSample
+
+This is a sample textfile.  
+JS orders your client to load this textfile.
+
+In your browser's developer tool, my container has an attribute 'data-src'. It is automatically inserted by JavaScript Engine. And also you can see an attribute 'data-markup-lang' whose content is 'markdown'. It means the content is written in Markdown, and thanks to a library '[marked](https://github.com/chjj/marked)', JavaScript Engine replaces Markdown into HTML.
+
+When you see a source of 'Sample3' HTML (NOT the page with a query '?id=sample3'), the path of the expected source textfile will be here like an alternate text for an image.
