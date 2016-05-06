@@ -19,4 +19,4 @@ e.g. prints a textfile...
 
 Please append an attribute 'data-load', and set the tag content into a path of your textfile.
 
-&gt;TAG data-load&lt;PATH&gt;/TAG&lt;
+&lt;TAG data-load&gt;PATH&lt;/TAG&gt;
