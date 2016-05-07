@@ -11,10 +11,11 @@ body
 
 #main
 {
-	margin: auto 1em;
+	margin: 1.5em 1em;
 	padding: 1em;
 	background: #fafafa;
 	flex-grow: 1;
+	max-width: 80%;
 }
 
 ul#listCategories
@@ -55,6 +56,40 @@ ul#listCategories li a
 
 .pre
 {
-	white-space: pre;
-	
+	white-space: pre-wrap;
 }
+
+.unpre
+{
+	white-space: normal;
+}
+
+ruby
+{
+	white-space: normal;
+}
+
+.novel-intro
+{
+	border-bottom: 1px solid gray;
+	margin-bottom: 2.5em;
+	padding-bottom: 0.5em;
+}
+.novel-after
+{
+	border-top: 1px solid gray;
+	margin-top: 2.5em;
+	padding-top: 0.5em;
+}
+
+.novel-ctrl
+{
+	margin: 1.2em;
+	margin-left: 0.2em;
+}
+
+.novel-ctrl > *
+{
+	margin: 0 0.5em;
+}
+
