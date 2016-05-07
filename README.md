@@ -13,7 +13,7 @@ http://kanomiya.github.io/JS_Site
 ## Language Parser
 #### Supporting
 - Markdown, thanks to [marked](https://github.com/chjj/marked)
-- Ruby, forms |TEXT≪RUBYU≫
+- Ruby, forms |TEXT≪RUBYU
 - Novel, 
     - Heading =====
     - Introduction -----
