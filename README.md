@@ -15,10 +15,13 @@ http://kanomiya.github.io/JS_Site
 - Markdown, thanks to [marked](https://github.com/chjj/marked)
 - Ruby, forms |TEXT≪RUBY≫
 - Novel, 
-    - Heading =====  
-Introduction -----  
+    - Heading  
+    =====  
+Introduction  
+-----  
 Body  
------ Afterwords
+-----  
+Afterwords
 
 ## File Loader
 e.g. prints a textfile...
